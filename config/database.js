@@ -1,4 +1,4 @@
-const db = require('knex')({
+const knex  = require('knex')({
     client: 'mysql2',
     connection: {
         host: 'localhost',
@@ -9,4 +9,4 @@ const db = require('knex')({
     }
 });
 
-module.exports = db;
+module.exports = knex ;
